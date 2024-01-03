@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/12/19 11:37:29.000.435,=C:\Users\gomes\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/12/19 21:11:56.000.499,C:\Users\gomes\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\gomes\Desktop\Stephanie\ESTUDOS\DELPHI\JOGO-DA-VELHA\jogoDaVelha.dfm</Transaction>
+    <Transaction>2023/12/19 21:11:56.000.499,C:\Users\gomes\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\gomes\Desktop\Stephanie\ESTUDOS\DELPHI\JOGO-DA-VELHA\jogoDaVelha.pas</Transaction>
+    <Transaction>2023/12/19 21:12:03.000.737,C:\Users\gomes\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\gomes\Desktop\Stephanie\ESTUDOS\DELPHI\JOGO-DA-VELHA\Jogo_Da_Velha.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
