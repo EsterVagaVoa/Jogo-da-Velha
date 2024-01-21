@@ -2,23 +2,18 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Jogo da Velha'
-  ClientHeight = 555
-  ClientWidth = 512
-  Color = cl3DLight
-  Constraints.MaxHeight = 593
-  Constraints.MaxWidth = 524
-  Constraints.MinHeight = 593
-  Constraints.MinWidth = 524
+  ClientHeight = 413
+  ClientWidth = 770
+  Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  Position = poScreenCenter
   TextHeight = 15
   object Image1: TImage
-    Left = 96
-    Top = 144
+    Left = 71
+    Top = 56
     Width = 305
     Height = 305
     Picture.Data = {
@@ -112,14 +107,14 @@ object Form1: TForm1
       2B7163D0195A74F70000000049454E44AE426082}
   end
   object lblMarca5: TLabel
-    Left = 224
-    Top = 256
+    Left = 199
+    Top = 168
     Width = 52
     Height = 83
     Caption = 'II'
-    Color = clWhite
+    Color = clBtnFace
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = cl3DLight
+    Font.Color = clBtnFace
     Font.Height = -67
     Font.Name = 'Showcard Gothic'
     Font.Style = []
@@ -128,28 +123,30 @@ object Form1: TForm1
     OnClick = lblMarca5Click
   end
   object lblMarca1: TLabel
-    Left = 120
-    Top = 144
+    Left = 95
+    Top = 56
     Width = 52
     Height = 83
     Caption = 'II'
+    Color = clBtnFace
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = cl3DLight
+    Font.Color = clBtnFace
     Font.Height = -67
     Font.Name = 'Showcard Gothic'
     Font.Style = []
+    ParentColor = False
     ParentFont = False
     OnClick = lblMarca1Click
   end
   object lblMarca2: TLabel
-    Left = 224
-    Top = 144
+    Left = 199
+    Top = 56
     Width = 52
     Height = 83
     Caption = 'II'
-    Color = clWhite
+    Color = clBtnFace
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = cl3DLight
+    Font.Color = clBtnFace
     Font.Height = -67
     Font.Name = 'Showcard Gothic'
     Font.Style = []
@@ -158,14 +155,14 @@ object Form1: TForm1
     OnClick = lblMarca2Click
   end
   object lblMarca3: TLabel
-    Left = 328
-    Top = 144
+    Left = 303
+    Top = 56
     Width = 52
     Height = 83
     Caption = 'II'
-    Color = clWhite
+    Color = clBtnFace
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = cl3DLight
+    Font.Color = clBtnFace
     Font.Height = -67
     Font.Name = 'Showcard Gothic'
     Font.Style = []
@@ -174,14 +171,14 @@ object Form1: TForm1
     OnClick = lblMarca3Click
   end
   object lblMarca6: TLabel
-    Left = 328
-    Top = 256
+    Left = 303
+    Top = 168
     Width = 52
     Height = 83
     Caption = 'II'
-    Color = clWhite
+    Color = clBtnFace
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = cl3DLight
+    Font.Color = clBtnFace
     Font.Height = -67
     Font.Name = 'Showcard Gothic'
     Font.Style = []
@@ -190,14 +187,14 @@ object Form1: TForm1
     OnClick = lblMarca6Click
   end
   object lblMarca4: TLabel
-    Left = 120
-    Top = 256
+    Left = 95
+    Top = 168
     Width = 52
     Height = 83
     Caption = 'II'
-    Color = clWhite
+    Color = clBtnFace
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = cl3DLight
+    Font.Color = clBtnFace
     Font.Height = -67
     Font.Name = 'Showcard Gothic'
     Font.Style = []
@@ -206,14 +203,14 @@ object Form1: TForm1
     OnClick = lblMarca4Click
   end
   object lblMarca7: TLabel
-    Left = 120
-    Top = 360
+    Left = 95
+    Top = 272
     Width = 52
     Height = 83
     Caption = 'II'
-    Color = clWhite
+    Color = clBtnFace
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = cl3DLight
+    Font.Color = clBtnFace
     Font.Height = -67
     Font.Name = 'Showcard Gothic'
     Font.Style = []
@@ -222,14 +219,14 @@ object Form1: TForm1
     OnClick = lblMarca7Click
   end
   object lblMarca8: TLabel
-    Left = 224
-    Top = 360
+    Left = 199
+    Top = 272
     Width = 52
     Height = 83
     Caption = 'II'
-    Color = clWhite
+    Color = clBtnFace
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = cl3DLight
+    Font.Color = clBtnFace
     Font.Height = -67
     Font.Name = 'Showcard Gothic'
     Font.Style = []
@@ -238,14 +235,14 @@ object Form1: TForm1
     OnClick = lblMarca8Click
   end
   object lblMarca9: TLabel
-    Left = 328
-    Top = 360
+    Left = 303
+    Top = 272
     Width = 52
     Height = 83
     Caption = 'II'
-    Color = clWhite
+    Color = clBtnFace
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = cl3DLight
+    Font.Color = clBtnFace
     Font.Height = -67
     Font.Name = 'Showcard Gothic'
     Font.Style = []
@@ -254,11 +251,10 @@ object Form1: TForm1
     OnClick = lblMarca9Click
   end
   object lblPonto1: TLabel
-    Left = 71
-    Top = 64
-    Width = 162
-    Height = 50
-    Align = alCustom
+    Left = 592
+    Top = 136
+    Width = 127
+    Height = 39
     Alignment = taCenter
     AutoSize = False
     Caption = '0'
@@ -274,10 +270,10 @@ object Form1: TForm1
     Layout = tlCenter
   end
   object lblPonto2: TLabel
-    Left = 256
-    Top = 64
-    Width = 162
-    Height = 50
+    Left = 592
+    Top = 202
+    Width = 127
+    Height = 39
     Alignment = taCenter
     AutoSize = False
     Caption = '0'
@@ -293,34 +289,34 @@ object Form1: TForm1
     Layout = tlCenter
   end
   object Label1: TLabel
-    Left = 120
-    Top = 32
-    Width = 60
-    Height = 19
-    Caption = 'Jogador 1'
+    Left = 475
+    Top = 144
+    Width = 96
+    Height = 28
+    Caption = 'Jogador 1: '
     Font.Charset = ANSI_CHARSET
     Font.Color = clTeal
-    Font.Height = -16
+    Font.Height = -23
     Font.Name = 'Bahnschrift SemiCondensed'
     Font.Style = []
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 304
-    Top = 32
-    Width = 62
-    Height = 19
-    Caption = 'Jogador 2'
+    Left = 475
+    Top = 210
+    Width = 95
+    Height = 28
+    Caption = 'Jogador 2:'
     Font.Charset = ANSI_CHARSET
     Font.Color = clTeal
-    Font.Height = -16
+    Font.Height = -23
     Font.Name = 'Bahnschrift SemiCondensed'
     Font.Style = []
     ParentFont = False
   end
   object btnComecar: TButton
-    Left = 50
-    Top = 243
+    Left = 25
+    Top = 168
     Width = 394
     Height = 73
     Caption = 'INICIAR'
@@ -334,8 +330,8 @@ object Form1: TForm1
     OnClick = btnComecarClick
   end
   object btnReiniciar: TButton
-    Left = 176
-    Top = 472
+    Left = 510
+    Top = 296
     Width = 139
     Height = 25
     Caption = 'REINICIAR'
