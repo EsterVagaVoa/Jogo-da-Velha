@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Jogo da Velha'
-  ClientHeight = 413
-  ClientWidth = 770
+  ClientHeight = 385
+  ClientWidth = 777
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,8 +12,8 @@ object Form1: TForm1
   Font.Style = []
   TextHeight = 15
   object Image1: TImage
-    Left = 71
-    Top = 56
+    Left = 87
+    Top = 40
     Width = 305
     Height = 305
     Picture.Data = {
@@ -107,8 +107,8 @@ object Form1: TForm1
       2B7163D0195A74F70000000049454E44AE426082}
   end
   object lblMarca5: TLabel
-    Left = 199
-    Top = 168
+    Left = 215
+    Top = 152
     Width = 52
     Height = 83
     Caption = 'II'
@@ -120,11 +120,12 @@ object Form1: TForm1
     Font.Style = []
     ParentColor = False
     ParentFont = False
+    Visible = False
     OnClick = lblMarca5Click
   end
   object lblMarca1: TLabel
-    Left = 95
-    Top = 56
+    Left = 111
+    Top = 40
     Width = 52
     Height = 83
     Caption = 'II'
@@ -136,11 +137,12 @@ object Form1: TForm1
     Font.Style = []
     ParentColor = False
     ParentFont = False
+    Visible = False
     OnClick = lblMarca1Click
   end
   object lblMarca2: TLabel
-    Left = 199
-    Top = 56
+    Left = 215
+    Top = 40
     Width = 52
     Height = 83
     Caption = 'II'
@@ -152,11 +154,12 @@ object Form1: TForm1
     Font.Style = []
     ParentColor = False
     ParentFont = False
+    Visible = False
     OnClick = lblMarca2Click
   end
   object lblMarca3: TLabel
-    Left = 303
-    Top = 56
+    Left = 319
+    Top = 40
     Width = 52
     Height = 83
     Caption = 'II'
@@ -168,11 +171,12 @@ object Form1: TForm1
     Font.Style = []
     ParentColor = False
     ParentFont = False
+    Visible = False
     OnClick = lblMarca3Click
   end
   object lblMarca6: TLabel
-    Left = 303
-    Top = 168
+    Left = 319
+    Top = 152
     Width = 52
     Height = 83
     Caption = 'II'
@@ -184,11 +188,12 @@ object Form1: TForm1
     Font.Style = []
     ParentColor = False
     ParentFont = False
+    Visible = False
     OnClick = lblMarca6Click
   end
   object lblMarca4: TLabel
-    Left = 95
-    Top = 168
+    Left = 111
+    Top = 152
     Width = 52
     Height = 83
     Caption = 'II'
@@ -200,11 +205,12 @@ object Form1: TForm1
     Font.Style = []
     ParentColor = False
     ParentFont = False
+    Visible = False
     OnClick = lblMarca4Click
   end
   object lblMarca7: TLabel
-    Left = 95
-    Top = 272
+    Left = 111
+    Top = 256
     Width = 52
     Height = 83
     Caption = 'II'
@@ -216,11 +222,12 @@ object Form1: TForm1
     Font.Style = []
     ParentColor = False
     ParentFont = False
+    Visible = False
     OnClick = lblMarca7Click
   end
   object lblMarca8: TLabel
-    Left = 199
-    Top = 272
+    Left = 215
+    Top = 256
     Width = 52
     Height = 83
     Caption = 'II'
@@ -232,11 +239,12 @@ object Form1: TForm1
     Font.Style = []
     ParentColor = False
     ParentFont = False
+    Visible = False
     OnClick = lblMarca8Click
   end
   object lblMarca9: TLabel
-    Left = 303
-    Top = 272
+    Left = 319
+    Top = 256
     Width = 52
     Height = 83
     Caption = 'II'
@@ -248,11 +256,12 @@ object Form1: TForm1
     Font.Style = []
     ParentColor = False
     ParentFont = False
+    Visible = False
     OnClick = lblMarca9Click
   end
   object lblPonto1: TLabel
-    Left = 592
-    Top = 136
+    Left = 608
+    Top = 120
     Width = 127
     Height = 39
     Alignment = taCenter
@@ -270,8 +279,8 @@ object Form1: TForm1
     Layout = tlCenter
   end
   object lblPonto2: TLabel
-    Left = 592
-    Top = 202
+    Left = 608
+    Top = 186
     Width = 127
     Height = 39
     Alignment = taCenter
@@ -289,8 +298,8 @@ object Form1: TForm1
     Layout = tlCenter
   end
   object Label1: TLabel
-    Left = 475
-    Top = 144
+    Left = 491
+    Top = 128
     Width = 96
     Height = 28
     Caption = 'Jogador 1: '
@@ -302,8 +311,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 475
-    Top = 210
+    Left = 491
+    Top = 194
     Width = 95
     Height = 28
     Caption = 'Jogador 2:'
@@ -315,8 +324,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object btnComecar: TButton
-    Left = 25
-    Top = 168
+    Left = 41
+    Top = 152
     Width = 394
     Height = 73
     Caption = 'INICIAR'
@@ -330,8 +339,8 @@ object Form1: TForm1
     OnClick = btnComecarClick
   end
   object btnReiniciar: TButton
-    Left = 510
-    Top = 296
+    Left = 526
+    Top = 280
     Width = 139
     Height = 25
     Caption = 'REINICIAR'

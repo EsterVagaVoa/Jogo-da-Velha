@@ -76,6 +76,16 @@ begin
   FPonto1 := 0;
   FPonto2 := 0;
 
+  lblMarca1.Visible := True;
+  lblMarca2.Visible := True;
+  lblMarca3.Visible := True;
+  lblMarca4.Visible := True;
+  lblMarca5.Visible := True;
+  lblMarca6.Visible := True;
+  lblMarca7.Visible := True;
+  lblMarca8.Visible := True;
+  lblMarca9.Visible := True;
+
   btnComecar.Visible := False;
   btnReiniciar.Visible := True;
 end;
@@ -156,7 +166,7 @@ end;
 
 procedure TForm1.MarcarCampo(lblMarcada: TLabel; lSimbolo: string);
 begin
-  if lblMarcada.Font.Color = cl3DLight then
+  if lblMarcada.Font.Color = clBtnFace then
     begin
        if lSimbolo = 'O' then lblMarcada.Caption := 'O'
        else lblMarcada.Caption := 'X';
@@ -175,7 +185,7 @@ begin
       Ponto2 := Ponto2+1;
       ShowMessage('Jogador 2 venceu!');
     end
-  else
+  else if (lCampos[Posicao].Caption = 'X') then
     begin
       Ponto1 := Ponto1+1;
       ShowMessage('Jogador 1 venceu!');
@@ -185,7 +195,7 @@ begin
   lblPonto2.Caption := IntToStr(Ponto2);
   for lContador := 1 to 9 do
     begin
-      lCampos[lContador].Font.Color := cl3DLight;
+      lCampos[lContador].Font.Color := clBtnFace;
       lCampos[lContador].Caption := 'II';
     end;
 end;
@@ -197,46 +207,46 @@ begin
   for lContador := 0 to 8 do
     if lCampos[lContador].Caption <> 'II' then lQuantidade := lQuantidade+1;
 
-  if lQuantidade = 9 then
+  if (lCampos[0].Caption = lCampos[1].Caption) AND (lCampos[0].Font.Color <> clBtnFace) AND (lCampos[1].Font.Color <> clBtnFace) AND (lCampos[1].Caption = lCampos[2].Caption) then
+    begin
+      MarcarPonto(1, FPonto1, FPonto2);
+    end
+  else if (lCampos[0].Caption = lCampos[3].Caption) AND (lCampos[0].Font.Color <> clBtnFace) AND (lCampos[3].Caption = lCampos[6].Caption) AND (lCampos[3].Font.Color <> clBtnFace) then
+    begin
+      MarcarPonto(1, FPonto1, FPonto2);
+    end
+  else if (lCampos[0].Caption = lCampos[4].Caption) AND (lCampos[0].Font.Color <> clBtnFace) AND (lCampos[4].Caption = lCampos[8].Caption) AND (lCampos[4].Font.Color <> clBtnFace) then
+    begin
+      MarcarPonto(1, FPonto1, FPonto2);
+    end
+  else if (lCampos[1].Caption = lCampos[4].Caption) AND (lCampos[1].Font.Color <> clBtnFace) AND (lCampos[4].Caption = lCampos[7].Caption) AND (lCampos[4].Font.Color <> clBtnFace) then
+    begin
+      MarcarPonto(2, FPonto1, FPonto2);
+    end
+  else if (lCampos[2].Caption = lCampos[5].Caption) AND (lCampos[2].Font.Color <> clBtnFace) AND (lCampos[5].Caption = lCampos[8].Caption) AND (lCampos[5].Font.Color <> clBtnFace) then
+    begin
+      MarcarPonto(3, FPonto1, FPonto2);
+    end
+  else if (lCampos[3].Caption = lCampos[4].Caption) AND (lCampos[3].Font.Color <> clBtnFace) AND (lCampos[4].Caption = lCampos[5].Caption) AND (lCampos[4].Font.Color <> clBtnFace) then
+    begin
+      MarcarPonto(4, FPonto1, FPonto2);
+    end
+  else if (lCampos[6].Caption = lCampos[7].Caption) AND (lCampos[6].Font.Color <> clBtnFace) AND (lCampos[7].Caption = lCampos[8].Caption) AND (lCampos[7].Font.Color <> clBtnFace) then
+    begin
+      MarcarPonto(7, FPonto1, FPonto2);
+    end
+  else if (lCampos[2].Caption = lCampos[4].Caption) AND (lCampos[2].Font.Color <> clBtnFace) AND (lCampos[4].Caption = lCampos[6].Caption) AND (lCampos[4].Font.Color <> clBtnFace) then
+    begin
+      MarcarPonto(3, FPonto1, FPonto2);
+    end
+  else if lQuantidade = 9 then
     begin
       ShowMessage('Deu velha!');
       for lContador := 0 to 8 do
         begin
           lCampos[lContador].Caption := 'II';
-          lCampos[lContador].Font.Color := cl3DLight;
+          lCampos[lContador].Font.Color := clBtnFace;
         end;
-    end
-  else if (lCampos[0].Caption = lCampos[1].Caption) AND (lCampos[0].Font.Color <> cl3DLight) AND (lCampos[1].Font.Color <> cl3DLight) AND (lCampos[1].Caption = lCampos[2].Caption) then
-    begin
-      MarcarPonto(1, FPonto1, FPonto2);
-    end
-  else if (lCampos[0].Caption = lCampos[3].Caption) AND (lCampos[0].Font.Color <> cl3DLight) AND (lCampos[3].Caption = lCampos[6].Caption) AND (lCampos[3].Font.Color <> cl3DLight) then
-    begin
-      MarcarPonto(1, FPonto1, FPonto2);
-    end
-  else if (lCampos[0].Caption = lCampos[4].Caption) AND (lCampos[0].Font.Color <> cl3DLight) AND (lCampos[4].Caption = lCampos[8].Caption) AND (lCampos[4].Font.Color <> cl3DLight) then
-    begin
-      MarcarPonto(1, FPonto1, FPonto2);
-    end
-  else if (lCampos[1].Caption = lCampos[4].Caption) AND (lCampos[1].Font.Color <> cl3DLight) AND (lCampos[4].Caption = lCampos[7].Caption) AND (lCampos[4].Font.Color <> cl3DLight) then
-    begin
-      MarcarPonto(2, FPonto1, FPonto2);
-    end
-  else if (lCampos[2].Caption = lCampos[5].Caption) AND (lCampos[2].Font.Color <> cl3DLight) AND (lCampos[5].Caption = lCampos[8].Caption) AND (lCampos[5].Font.Color <> cl3DLight) then
-    begin
-      MarcarPonto(3, FPonto1, FPonto2);
-    end
-  else if (lCampos[3].Caption = lCampos[4].Caption) AND (lCampos[3].Font.Color <> cl3DLight) AND (lCampos[4].Caption = lCampos[5].Caption) AND (lCampos[4].Font.Color <> cl3DLight) then
-    begin
-      MarcarPonto(4, FPonto1, FPonto2);
-    end
-  else if (lCampos[6].Caption = lCampos[7].Caption) AND (lCampos[6].Font.Color <> cl3DLight) AND (lCampos[7].Caption = lCampos[8].Caption) AND (lCampos[7].Font.Color <> cl3DLight) then
-    begin
-      MarcarPonto(7, FPonto1, FPonto2);
-    end
-  else if (lCampos[2].Caption = lCampos[4].Caption) AND (lCampos[2].Font.Color <> cl3DLight) AND (lCampos[4].Caption = lCampos[6].Caption) AND (lCampos[4].Font.Color <> cl3DLight) then
-    begin
-      MarcarPonto(3, FPonto1, FPonto2);
     end;
 
 end;
@@ -248,7 +258,7 @@ begin
   lQuantidade := 0;
 
   for lContador := 0 to 8 do
-      if lCampos[lContador].Font.Color <> cl3DLight then lQuantidade := lQuantidade+1;
+      if lCampos[lContador].Font.Color <> clBtnFace then lQuantidade := lQuantidade+1;
 
       if (lQuantidade Mod 2) = 0 then Simbolo := 'X'
       else Simbolo := 'O';

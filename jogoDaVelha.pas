@@ -76,6 +76,16 @@ begin
   FPonto1 := 0;
   FPonto2 := 0;
 
+  lblMarca1.Visible := True;
+  lblMarca2.Visible := True;
+  lblMarca3.Visible := True;
+  lblMarca4.Visible := True;
+  lblMarca5.Visible := True;
+  lblMarca6.Visible := True;
+  lblMarca7.Visible := True;
+  lblMarca8.Visible := True;
+  lblMarca9.Visible := True;
+
   btnComecar.Visible := False;
   btnReiniciar.Visible := True;
 end;
@@ -92,7 +102,7 @@ begin
   ArmazenarCampos(lCampos);
   for lContador := 1 to 9 do
   begin
-    lCampos[lContador].Font.Color := cl3DLight;
+    lCampos[lContador].Font.Color := clBtnFace;
     lCampos[lContador].Caption := 'II';
   end;
 end;
